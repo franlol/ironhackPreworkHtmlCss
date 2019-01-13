@@ -4,9 +4,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
   <title>npm</title>
 </head>
 <body>
-  <!-- Your code goes here -->
+
+  <nav>
+    <div class="content-full">
+      <div class="top-left">
+        <a href="https://github.com/franlol" class="heart">❤</a>
+        <span class="acronym">Nutritious Pumpkin Meal</span>
+      </div>
+      <ul class="top-links">
+        <li><a href="#">npm Enterprise</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="content-full">
+      <div id="header-nav">
+        <div id="header-nav-logo">
+          <a class="logo" href="./index.html"><img src="./images/npm-logo.png" alt="npm"></a>
+        </div>
+        <div id="header-nav-form">
+            <form action="./search.js" method="get">
+              <label><img src="./images/search.svg" alt="search"></label>
+              <input placeholder="find packages" type="text" name="string-to-search">
+            </form>
+        </div>
+        <div id="header-nav-sign">
+            <p><a href="#">Log in</a> or <a href="#">Sign up</a></p>
+            <img src="./images/bear-logo.png" alt="npm bear">
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="content">
+      <div id="header-info">
+        <h1>Build amazing things</h1>
+        <p>npm is the package manager for JavaScript and the world’s largest software registry. Discover packages of reusable code — and assemble them in powerful new ways.</p>
+        <button>Sign up</button>
+      </div>
+    </div>
+  </header>
+
+  <section id="sign-up-section">
+    <div class="content">
+      <img src="./images/collaboration.svg" alt="">
+      <div id="sign-up-section-content">
+        <h1>npm Orgs is powerful collaboration - for free</h1>
+        <ul>
+          <li>Encourage code discovery and re-use within teams</li>
+          <li>Publish and control access to your own namespace</li>
+          <li>Manage public and private code with the same workflow</li>
+        </ul>
+        <button>Sign up for Orgs</button>
+        <p>or, <a href="#">Learn more about Orgs</a></p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </section>
+
+  <section id="install-npm-section">
+    <div class="content">
+      <div id="install-npm-section-wrap">
+        <h1>What is npm?</h1>
+        <p>Use npm to install, share, and distribute code; manage dependencies in your projects; and share & recive feedback with others.</p>
+        <button>Install npm</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="info">
+    <div class="content">
+      <div id="info-heading">
+        <h1>What can you make with 800,000 building blocks?</h1>
+        <p>The npm registry hosts the world’s largest collection of free, reusable code.</p>
+      </div>
+      <div id="info-logos">
+        <div id="info-logos-items">
+          <img src="./images/binoculars.svg" alt="Find">
+          <h3>Find</h3>
+          <p>Libraries like <a href="#">Jquery</a>, <a href="#">Bootstrap</a>, <a href="#">React</a>, and <a href="#">Angular</a>, and components from frameworks such as <a href="#">Ember</a>.</p>
+        </div>
+        <div id="info-logos-items">
+          <img src="./images/mountain-flag.svg" alt="Discover">
+          <h3>Discover</h3>
+          <p>Packages for mobile, IoT, front end, back end, robotics... everything you need to start building amazing things.</p>
+        </div>
+        <div id="info-logos-items">
+          <img src="./images/backpack.svg" alt="Build">
+          <h3>Build</h3>
+          <p>Assemble packages like building blocks to quickly develop awesome new projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
