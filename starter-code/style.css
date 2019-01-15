@@ -10,6 +10,7 @@ body {
   max-width: 960px;
   margin: 0 auto;
 }
+
 .content-full { /* Per la navbar i la searchbar */
   max-width: 1600px;
   margin: 0 auto;
@@ -23,6 +24,7 @@ nav {
   font-weight: bold;
   font-size: 14px;
 }
+
 nav a {
   color: rgba(255,255,255,0.8);
   text-decoration: none;
@@ -32,22 +34,27 @@ nav a {
 .top-left {
   float: left;
 }
+
 .top-links {
   float: right;
   padding: 0;
   margin: 0 20px 0 0;
 }
+
 .top-links li {
   display: inline-block;
   margin: 0 6px;
 }
+
 .top-links li :hover {
   color: white;
   transition: 0.3s ease-in;
 }
+
 .heart {
   margin: 0 24px;
 }
+
 .clearfix {
   clear: both;
 }
@@ -64,6 +71,7 @@ header {
 #header-nav-logo {
   float: left;
 }
+
 #header-nav-logo img {
   width: 80px;
   margin: 16px 16px 16px 32px;
@@ -73,6 +81,7 @@ header {
   width: calc(100% - (134px + 200px));
   float: left;
 }
+
 #header-nav-form input {
   position: relative;
   bottom: 16px;
@@ -82,6 +91,7 @@ header {
   height: 26px;
   z-index: 3;
 }
+
 #header-nav-form img {
   z-index: 4;
   float: right;
@@ -97,18 +107,22 @@ header {
 #header-nav-sign {
   float: right;
 }
+
 #header-nav-sign img {
   height: 50px;
   margin-left: 5px;
   margin-right: 6px;
 }
+
 #header-nav-sign p {
   float: left;
 }
+
 #header-nav-sign a, p {
   text-decoration: none;
   color: rgba(255,255,255,0.8);
 }
+
 #header-nav-sign a:hover {
   color: white;
   transition: 0.3s ease-in;
@@ -120,20 +134,23 @@ header {
   color: white;
   font-weight: 400;
 }
+
 #header-info h1 {
   font-weight: inherit;
   font-size: 3rem;
   margin: 90px 0 0 20px;
 }
+
 #header-info p {
-  margin: 50px 0 0 20px;
+  margin: 50px 0 40px 20px;
   font-weight: inherit;
   letter-spacing: 1px;
   line-height: 24px;
   font-size: 18px;
 }
 
-#header-info button {
+/* #header-info button { */
+#header-info .header-info-button {
   font-size: 18px;
   margin: 40px 0 0 20px;
   background-color: #f09233;
@@ -143,42 +160,54 @@ header {
   letter-spacing: 1px;
   border-radius: 30px;
   border: 0;
+  padding: 10px 90px;
+  text-decoration: none;
 }
-#header-info button:hover {
+
+#header-info .header-info-button:hover {
   background-color: #e67403;
   cursor: pointer;
   transition: 0.2s ease-in;
 }
 
-
 #sign-up-section {
   background-color: rgb(39, 53, 71);
   padding: 120px 0 60px;
 }
+
 #sign-up-section img {
   width: 435px;
 }
+
 #sign-up-section-content {
   color: white;
   width: 440px;
   float: right;
 }
+
 #sign-up-section-content h1 {
   margin: 0;
   line-height: 44px;
   font-weight: 400;
   font-size: 2.9em;
 }
+
 #sign-up-section-content li {
   letter-spacing: 1.2px;
   line-height: 30px;
   font-size: 20px;
   margin-bottom: 10px;
 }
-#sign-up-section-content button {
+
+#sign-up-section-content ul {
+  margin: 40px 0;
+}
+
+#sign-up-section-content .sign-up-section-content-button {
   background-color: rgb(203, 56, 55);
   font-size: 18px;
-  margin: 18px 0 0 0px;
+  margin: 30px 0 0 40px;
+  padding: 9px 100px;
   color: white;
   width: 380px;
   height: 40px;
@@ -186,19 +215,22 @@ header {
   border-radius: 30px;
   border: 0;
 }
-#sign-up-section-content button:hover {
+
+#sign-up-section-content .sign-up-section-content-button:hover {
   cursor: pointer;
+  text-decoration: none;
 }
-#sign-up-section-content p a {
+
+#sign-up-section-content p, a {
   color: white;
   text-decoration: none;
   font-size: 20px;
   text-align: center;
 }
+
 #sign-up-section-content a:hover {
   text-decoration: underline;
 }
-
 
 #install-npm-section {
   background-image: url("./images/forklift.svg");
@@ -207,6 +239,7 @@ header {
   color: white;
   /* position: relative; */
 }
+
 #install-npm-section-wrap {
   width: 405px;
   /* position: absolute; */
@@ -214,17 +247,21 @@ header {
   left: 300px; */
   padding-top: 90px;
 }
+
 #install-npm-section h1 {
   margin: 0;
   line-height: 44px;
   font-weight: 400;
   font-size: 2.9em;
 }
+
 #install-npm-section p {
   font-size: 20px;
 }
-#install-npm-section button {
+
+#install-npm-section .install-npm-section-wrap-button {
   background-color: rgb(49, 68, 88);
+  padding: 7px 25px;
   font-size: 18px;
   margin: 18px 0 0 0px;
   color: white;
@@ -234,6 +271,9 @@ header {
   border: 0;
 }
 
+#install-npm-section .install-npm-section-wrap-button:hover {
+  cursor: pointer;
+}
 
 /* #info {
 
@@ -256,27 +296,35 @@ header {
   height: 360px;
   text-align: center;
 }
+
 #info-logos-items {
   width: 33%;
   float: left;
 }
+
 #info-logos-items img {
   margin: 20px auto;
   width: 80px;
-
 }
+
 #info-logos h3 {
   color: rgb(83, 88, 98);
   font-weight: 400;
   margin: 0 auto;
 }
+
 #info-logos p {
   color: rgb(135, 145, 156);
   margin: 10px 50px;
-  font-size: 15px;
-
+  font-size: 17px;
 }
+
 #info-logos a {
   color: rgb(208, 74, 73);
   text-decoration: none;
+  font-size: 17px;
+}
+
+#info-logos a:hover {
+  text-decoration: underline;
 }
